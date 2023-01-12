@@ -7,6 +7,11 @@
 .logo {
   max-width: 100px;
 }
+
+.logo-position {
+  margin-top: 50px;
+}
+
 .first-name {
   color: var(--primary-color);
 }
