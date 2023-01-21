@@ -12,8 +12,10 @@
   margin-top: 50px;
 }
 
-.first-name {
-  color: var(--primary-color);
+@media (max-width: 576px) {
+  .logo-position {
+    margin-top: 70px;
+  }
 }
 
 /*About Page*/
