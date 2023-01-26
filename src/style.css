@@ -75,6 +75,45 @@ small {
   resize: both;
 }
 
+/* buttons*/
+.button {
+  border: 3px solid var(--secondary-color);
+  color: var(--secondary-color);
+  display: inline-block;
+  padding: 10px 30px;
+  position: relative;
+  left: 150px;
+  text-decoration: none;
+}
+
+.button::before,
+.button::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: inherit;
+  position: absolute;
+  transition: width 0.25s 0.15s, height 0.25s;
+}
+
+.button::before {
+  top: -15px;
+  left: -15px;
+  border-width: 3px 0 0 3px;
+}
+
+.button::after {
+  bottom: -15px;
+  right: -15px;
+  border-width: 0 3px 3px 0;
+}
+
+.button:hover::before,
+.button:hover::after {
+  width: calc(100% + 27px);
+  height: calc(100% + 27px);
+}
+
 /* medium/large viewport */
 @media (max-width: 992px) {
   body {
@@ -93,6 +132,11 @@ small {
   .profile-pic {
     max-width: 100%;
     margin-top: 50px;
+  }
+
+  .button {
+    position: relative;
+    left: 50px;
   }
 }
 
@@ -119,5 +163,10 @@ small {
 
   .about {
     margin-top: 140px;
+  }
+
+  .button {
+    position: relative;
+    left: 0px;
   }
 }
