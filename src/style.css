@@ -1,11 +1,7 @@
 :root {
-  --primary-color: #6c757d;
+  --primary-color: #b2bec3;
   --secondary-color: #505151;
   --default-font-family: ;
-}
-
-body {
-  margin-top: 35px;
 }
 
 h1 {
@@ -34,8 +30,18 @@ small {
   margin-top: 140px;
 }
 
+.arc {
+  background: linear-gradient(#212529, #b2bec3);
+  border-bottom-right-radius: 180px 180px;
+  position: absolute;
+  height: 450px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
 /* image card */
-.container {
+.square {
   position: relative;
   display: flex;
   justify-content: center;
@@ -43,18 +49,18 @@ small {
   flex-wrap: wrap;
 }
 
-.container .box {
+.square .box {
   position: relative;
   width: 360px;
   height: 260px;
   margin: 20px;
 }
 
-.container .box:hover .imgBox {
+.square .box:hover .imgBox {
   transform: translate(-2.5rem, -2ex);
 }
 
-.container .box:hover .content {
+.square .box:hover .content {
   transform: translate(110px, 250px);
 }
 
@@ -117,7 +123,7 @@ small {
 /* medium/large viewport */
 @media (max-width: 992px) {
   body {
-    margin-top: 70px;
+    margin-top: 100px;
   }
 
   h1 {
@@ -134,6 +140,11 @@ small {
     margin-top: 50px;
   }
 
+  .arc {
+    border-bottom-right-radius: 180px 180px;
+    height: 280px;
+  }
+
   .button {
     position: relative;
     left: 50px;
@@ -142,17 +153,12 @@ small {
 
 /* mobile viewport */
 @media (max-width: 576px) {
-  body {
-    margin-top: 100px;
-    text-align: center;
-  }
-
   h1 {
     font-size: 32px;
   }
 
   h3 {
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 20px;
   }
 
@@ -163,6 +169,11 @@ small {
 
   .about {
     margin-top: 140px;
+  }
+
+  .arc {
+    border-bottom-right-radius: 70px 70px;
+    height: 140px;
   }
 
   .button {
