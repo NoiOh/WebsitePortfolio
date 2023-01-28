@@ -26,6 +26,10 @@ small {
   margin-top: 140px;
 }
 
+.subtitle-content {
+  margin-top: 800px;
+}
+
 .primary-content {
   padding: 100px 50px 60px;
 }
@@ -33,23 +37,31 @@ small {
 .secondary-content {
   background: #212529;
   color: white;
+  padding-top: 50px;
+  position: absolute;
+  left: 0;
+  height: 800px;
+  width: 100%;
   text-align: center;
-  height: 1000px;
 }
 
 .card {
   border-style: none;
+  border-radius: 0;
+}
+
+.card-img-top {
+  border-radius: 0;
 }
 
 .logo {
   max-width: 100px;
 }
 
-.arc {
+.overlay {
   background: linear-gradient(#212529, #b2bec3);
-  border-bottom-right-radius: 180px 180px;
   position: absolute;
-  height: 450px;
+  height: 672px;
   width: 100%;
   top: 0px;
   left: 0px;
@@ -155,9 +167,8 @@ small {
     margin-top: 50px;
   }
 
-  .arc {
-    border-bottom-right-radius: 180px 180px;
-    height: 280px;
+  .overlay {
+    height: 400px;
   }
 
   .button {
@@ -173,8 +184,8 @@ small {
   }
 
   h3 {
-    margin-top: 20px;
     font-size: 20px;
+    line-height: 1.5;
   }
 
   p {
@@ -182,13 +193,24 @@ small {
     margin-top: 40px;
   }
 
+  .subtitle-content {
+    margin-top: 260px;
+  }
+
+  .primary-content {
+    margin-top: -80px;
+  }
+
+  .card-body {
+    margin-bottom: -10px;
+  }
+
   .about {
     margin-top: 140px;
   }
 
-  .arc {
-    border-bottom-right-radius: 70px 70px;
-    height: 140px;
+  .overlay {
+    height: 214px;
   }
 
   .button {
