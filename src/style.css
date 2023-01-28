@@ -9,9 +9,12 @@ h1 {
   font-size: 56px;
 }
 
+h2 {
+  font-size: 48px;
+}
+
 h3 {
-  color: black;
-  font-size: 24px;
+  font-size: 32px;
 }
 
 p {
@@ -41,7 +44,6 @@ small {
   padding-top: 50px;
   position: absolute;
   left: 0;
-  height: 800px;
   width: 100%;
   text-align: center;
 }
@@ -62,13 +64,20 @@ small {
 .overlay {
   background: linear-gradient(#212529, #b2bec3);
   position: absolute;
-  height: 665px;
+  height: 672px;
   width: 100%;
   top: 0px;
   left: 0px;
 }
 
 /* buttons*/
+.btn-outline {
+  border: 1px solid #fff;
+  border-radius: 0;
+  color: #fff;
+  padding: 15px 30px;
+}
+
 .button {
   border: 3px solid var(--secondary-color);
   color: var(--secondary-color);
@@ -162,6 +171,7 @@ small {
   .overlay {
     height: 376px;
   }
+
   .subtitle-content {
     margin-top: 450px;
   }
@@ -171,12 +181,16 @@ small {
   }
 
   .secondary-content {
-    margin-top: -40px;
+    margin-top: -30px;
   }
 
   .profile-pic {
     max-width: 100%;
     margin-top: 50px;
+  }
+
+  .btn-outline {
+    margin-top: -30px;
   }
 
   .button {
@@ -189,15 +203,19 @@ small {
 @media (max-width: 576px) {
   h1 {
     font-size: 32px;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-size: 28px;
   }
 
   h3 {
-    font-size: 20px;
-    line-height: 1.5;
+    font-size: 24px;
   }
 
   p {
-    font-size: 18px;
+    font-size: 20px;
     margin-top: 40px;
   }
 
