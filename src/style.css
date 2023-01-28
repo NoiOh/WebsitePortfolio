@@ -106,8 +106,8 @@ small {
   height: calc(100% + 27px);
 }
 
-/* medium/large viewport */
-@media (max-width: 992px) {
+/* medium viewport */
+@media (max-width: 768px) {
   body {
     margin-top: 100px;
   }
@@ -122,10 +122,10 @@ small {
   }
 
   .overlay {
-    height: 400px;
+    height: 376px;
   }
   .subtitle-content {
-    margin-top: 520px;
+    margin-top: 450px;
   }
 
   .primary-content {
