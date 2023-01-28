@@ -67,47 +67,6 @@ small {
   left: 0px;
 }
 
-/* image card */
-.square {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.square .box {
-  position: relative;
-  width: 360px;
-  height: 260px;
-  margin: 20px;
-}
-
-.square .box:hover .imgBox {
-  transform: translate(-2.5rem, -2ex);
-}
-
-.square .box:hover .content {
-  transform: translate(110px, 250px);
-}
-
-.imgBox {
-  position: absolute;
-  top: -10px;
-  left: -10px;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  transition: all 0.5s ease-in-out;
-}
-
-.imgBox img {
-  width: 360px;
-  height: 260px;
-  object-fit: cover;
-  resize: both;
-}
-
 /* buttons*/
 .button {
   border: 3px solid var(--secondary-color);
