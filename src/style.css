@@ -11,7 +11,6 @@ h1 {
 h3 {
   color: black;
   font-size: 24px;
-  opacity: 0.6;
 }
 
 p {
@@ -23,8 +22,19 @@ small {
   font-weight: lighter;
 }
 
+.header {
+  margin-top: 140px;
+}
+
 .primary-content {
-  padding: 100px 50px;
+  padding: 100px 50px 60px;
+}
+
+.secondary-content {
+  background: #212529;
+  color: white;
+  text-align: center;
+  height: 1000px;
 }
 
 .card {
@@ -33,10 +43,6 @@ small {
 
 .logo {
   max-width: 100px;
-}
-
-.header {
-  margin-top: 140px;
 }
 
 .arc {
