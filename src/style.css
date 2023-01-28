@@ -74,7 +74,7 @@ small {
   display: inline-block;
   padding: 10px 30px;
   position: relative;
-  left: 150px;
+  left: 220px;
   text-decoration: none;
 }
 
@@ -121,13 +121,24 @@ small {
     margin-top: 20px;
   }
 
+  .overlay {
+    height: 400px;
+  }
+  .subtitle-content {
+    margin-top: 520px;
+  }
+
+  .primary-content {
+    margin-top: -40px;
+  }
+
+  .secondary-content {
+    margin-top: -40px;
+  }
+
   .profile-pic {
     max-width: 100%;
     margin-top: 50px;
-  }
-
-  .overlay {
-    height: 400px;
   }
 
   .button {
@@ -174,6 +185,6 @@ small {
 
   .button {
     position: relative;
-    left: 0px;
+    left: 20px;
   }
 }
