@@ -1,3 +1,4 @@
+/*large  (27in) view*/
 :root {
   --primary-color: #b2bec3;
   --secondary-color: #505151;
@@ -61,7 +62,7 @@ small {
 .overlay {
   background: linear-gradient(#212529, #b2bec3);
   position: absolute;
-  height: 672px;
+  height: 665px;
   width: 100%;
   top: 0px;
   left: 0px;
@@ -104,6 +105,43 @@ small {
 .button:hover::after {
   width: calc(100% + 27px);
   height: calc(100% + 27px);
+}
+
+/* laptop (14in) viewport */
+@media (max-width: 1400px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .overlay {
+    height: 542px;
+  }
+  .subtitle-content {
+    margin-top: 620px;
+  }
+
+  .primary-content {
+    margin-top: -40px;
+  }
+
+  .secondary-content {
+    margin-top: -40px;
+  }
+
+  .profile-pic {
+    max-width: 100%;
+    margin-top: 10px;
+  }
+
+  .button {
+    position: relative;
+    left: 150px;
+  }
 }
 
 /* medium viewport */
