@@ -1,4 +1,4 @@
-/*large  (27in) view*/
+/* monitor (27in) view */
 :root {
   --primary-color: #b2bec3;
   --secondary-color: #505151;
@@ -116,7 +116,7 @@ small {
   height: calc(100% + 27px);
 }
 
-/* laptop (14in) viewport */
+/* xxl viewport */
 @media (max-width: 1400px) {
   h1 {
     font-size: 36px;
@@ -128,14 +128,19 @@ small {
   }
 
   .overlay {
-    height: 542px;
+    height: 644px;
   }
+
   .subtitle-content {
-    margin-top: 620px;
+    margin-top: 720px;
   }
 
   .primary-content {
     margin-top: -40px;
+  }
+
+  .card-outline {
+    margin-top: -20px;
   }
 
   .secondary-content {
@@ -153,12 +158,48 @@ small {
   }
 }
 
-/* medium viewport */
-@media (max-width: 768px) {
-  body {
-    margin-top: 100px;
+/* xl viewport */
+@media (max-width: 1200px) {
+  h1 {
+    font-size: 36px;
   }
 
+  p {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .overlay {
+    height: 560px;
+  }
+
+  .subtitle-content {
+    margin-top: 640px;
+  }
+}
+
+/* large device viewport */
+@media (max-width: 992px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  p {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .overlay {
+    height: 470px;
+  }
+
+  .subtitle-content {
+    margin-top: 540px;
+  }
+}
+
+/* medium viewport */
+@media (max-width: 768px) {
   h1 {
     font-size: 36px;
   }
@@ -199,48 +240,93 @@ small {
   }
 }
 
-/* mobile viewport */
+/* small viewport */
 @media (max-width: 576px) {
   h1 {
-    font-size: 32px;
+    font-size: 24px;
     font-weight: normal;
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 14px;
   }
 
   h3 {
-    font-size: 24px;
+    font-size: 12px;
   }
 
   p {
-    font-size: 20px;
-    margin-top: 40px;
-  }
-
-  .subtitle-content {
-    margin-top: 260px;
-  }
-
-  .primary-content {
-    margin-top: -80px;
-  }
-
-  .card-body {
-    margin-bottom: -10px;
-  }
-
-  .about {
-    margin-top: 140px;
+    font-size: 10px;
+    margin-top: 15px;
   }
 
   .overlay {
-    height: 214px;
+    height: 293px;
+  }
+
+  .subtitle-content {
+    margin-top: 330px;
+  }
+
+  .primary-content {
+    margin-top: -60px;
+  }
+
+  .card-outline {
+    margin-top: -18px;
+  }
+
+  .secondary-content {
+    margin-top: -70px;
+  }
+
+  .secondary-content-outline {
+    margin-top: -20px;
+  }
+
+  .profile-pic {
+    max-width: 100%;
+    margin-top: 50px;
+  }
+
+  .btn-outline {
+    margin-top: -40px;
+    font-size: 12px;
+    padding: 10px 20px;
   }
 
   .button {
     position: relative;
     left: 20px;
+    top: -20px;
+  }
+}
+
+/* mobile viewport */
+@media (max-width: 320px) {
+  h1 {
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-top: 40px;
+  }
+
+  .overlay {
+    height: 216px;
+  }
+
+  .subtitle-content {
+    margin-top: 260px;
   }
 }
