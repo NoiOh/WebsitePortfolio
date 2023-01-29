@@ -301,32 +301,3 @@ small {
     top: -20px;
   }
 }
-
-/* mobile viewport */
-@media (max-width: 320px) {
-  h1 {
-    font-size: 24px;
-    font-weight: normal;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-  h3 {
-    font-size: 16px;
-  }
-
-  p {
-    font-size: 16px;
-    margin-top: 40px;
-  }
-
-  .overlay {
-    height: 216px;
-  }
-
-  .subtitle-content {
-    margin-top: 260px;
-  }
-}
