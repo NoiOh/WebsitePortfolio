@@ -50,7 +50,7 @@ small {
 .contact-box {
   background: #fafafa;
   border-radius: 4px;
-  padding: 30px;
+  padding: 30px 150px;
 }
 
 .contact-btn-outline {
@@ -260,6 +260,10 @@ small {
 
   .subtitle-content {
     margin-top: 540px;
+  }
+
+  .contact-box {
+    padding: 30px;
   }
 }
 
