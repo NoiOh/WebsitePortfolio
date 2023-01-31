@@ -2,23 +2,31 @@
 :root {
   --primary-color: #b2bec3;
   --secondary-color: #505151;
-  --default-font-family: ;
+  --shecodes-color: #885df1;
+  --header-font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
   font-size: 56px;
+  font-family: var(--header-font-family);
 }
 
 h2 {
   font-size: 48px;
+  font-family: var(--header-font-family);
 }
 
 h3 {
   font-size: 32px;
 }
 
-p {
+.p-normal {
   font-size: 24px;
+}
+
+.p-brief {
+  font-size: 16px;
+  margin-top: -15px;
 }
 
 small {
@@ -27,7 +35,7 @@ small {
 }
 
 .header {
-  margin-top: 140px;
+  margin-top: 120px;
 }
 
 .subtitle-content {
@@ -61,6 +69,10 @@ small {
   max-width: 100px;
 }
 
+.shecodes {
+  color: var(--shecodes-color);
+}
+
 .overlay {
   background: linear-gradient(#212529, #b2bec3);
   position: absolute;
@@ -70,12 +82,26 @@ small {
   left: 0px;
 }
 
+.img-outline {
+  box-shadow: -0.3em 0 0.9em var(--shecodes-color);
+}
+
 /* buttons*/
 .btn-outline {
   border: 1px solid #fff;
   border-radius: 0;
   color: #fff;
   padding: 15px 30px;
+}
+
+.brief-btn-outline {
+  background: #212529;
+  color: #fff;
+}
+
+.project-btn-outline {
+  border: 1px solid #212529;
+  margin-right: 10px;
 }
 
 .button {
@@ -123,8 +149,7 @@ small {
   }
 
   p {
-    font-size: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .overlay {
@@ -160,15 +185,6 @@ small {
 
 /* xl viewport */
 @media (max-width: 1200px) {
-  h1 {
-    font-size: 36px;
-  }
-
-  p {
-    font-size: 20px;
-    margin-top: 20px;
-  }
-
   .overlay {
     height: 560px;
   }
@@ -180,15 +196,6 @@ small {
 
 /* large device viewport */
 @media (max-width: 992px) {
-  h1 {
-    font-size: 36px;
-  }
-
-  p {
-    font-size: 20px;
-    margin-top: 20px;
-  }
-
   .overlay {
     height: 470px;
   }
@@ -200,15 +207,6 @@ small {
 
 /* medium viewport */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 36px;
-  }
-
-  p {
-    font-size: 20px;
-    margin-top: 20px;
-  }
-
   .overlay {
     height: 376px;
   }
@@ -243,21 +241,30 @@ small {
 /* small viewport */
 @media (max-width: 576px) {
   h1 {
-    font-size: 24px;
+    font-size: 30;
     font-weight: normal;
   }
 
   h2 {
-    font-size: 20px;
+    font-size: 26px;
+    font-weight: bold;
   }
 
   h3 {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   p {
-    font-size: 16px;
     margin-top: 15px;
+  }
+
+  .p-normal {
+    font-size: 18px;
+  }
+
+  .p-brief {
+    font-size: 18px;
+    margin-top: -10px;
   }
 
   .overlay {
