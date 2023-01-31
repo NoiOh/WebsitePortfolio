@@ -47,6 +47,16 @@ small {
   text-align: center;
 }
 
+.contact-box {
+  background: #fafafa;
+  border-radius: 4px;
+  padding: 30px;
+}
+
+.contact-btn-outline {
+  margin-top: 30px;
+}
+
 .p-normal {
   font-size: 24px;
 }
@@ -97,7 +107,7 @@ small {
   border-radius: 0;
   color: #fff;
   padding: 15px 30px;
-  transition: all 150ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 .btn-outline:hover {
@@ -109,17 +119,29 @@ small {
 .brief-btn-outline {
   background: var(--secondary-color);
   color: #fff;
-  transition: all 150ms ease-in-out;
+  padding-left: 56px;
+  padding-right: 56px;
+  transition: all 100ms ease-in-out;
 }
 
 .brief-btn-outline:hover {
   border: 1px solid var(--secondary-color);
 }
 
+.contact-btn {
+  border: 2px solid var(--secondary-color);
+  background: var(--secondary-color);
+  border-radius: 0.4px;
+  box-shadow: 2px 2px 4px rgba(33, 37, 41, 0.4);
+  color: #fff;
+  padding: 10px 30px;
+  transition: all 100ms ease-in-out;
+}
+
 .project-btn-outline {
   border: 1px solid var(--secondary-color);
+  transition: all 100ms ease-in-out;
   margin-right: 10px;
-  transition: all 150ms ease-in-out;
 }
 
 .project-btn-outline:hover {
@@ -264,6 +286,10 @@ small {
     margin-top: 50px;
   }
 
+  .brief-btn-outline {
+    margin-right: 10px;
+  }
+
   .btn-outline {
     margin-top: -30px;
   }
@@ -342,5 +368,9 @@ small {
     position: relative;
     left: 20px;
     top: -20px;
+  }
+
+  .contact-btn-outline {
+    margin-top: 15px;
   }
 }
